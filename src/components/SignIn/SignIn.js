@@ -8,6 +8,7 @@ class SignIn extends Component {
             signInPassword: ''
         }
     }
+
     onEmailChange = (event) => {
         this.setState({signInEmail: event.target.value});
     };
@@ -31,6 +32,7 @@ class SignIn extends Component {
                     this.props.loadUser(user);
                     this.props.onRouteChange('home');
                 }
+
             })
     };
 
